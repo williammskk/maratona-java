@@ -38,21 +38,22 @@ public class BossFightTest {
             int resposta;
             System.out.println();
             resposta = input.nextInt();
-            if (resposta > 3){
+            if (resposta > 3 || resposta <= 0){
                 System.out.println("Escolha um número apenas de 1 a 3, tente novamente!");
                 System.out.println();
             } else if (resposta == 1) {
                 arqueiro.ataque();
             } else if (resposta == 2){
                 mago.ataque();
-            } else if (resposta == 3){
+            } else {
                 cavaleiro.ataque();
             }
             vidaTotal = 0;
             for (Personagem personagem : personagens) {
                 vidaTotal += personagem.getVida();
             }
-            System.out.println("Vida total atual: "+vidaTotal);
+            System.out.println("Vida total dos personagens: "+vidaTotal);
+
         }
 
         // RESULTADO FINAL:
