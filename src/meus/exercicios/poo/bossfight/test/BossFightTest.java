@@ -20,9 +20,9 @@ public class BossFightTest {
         // IMPRIMINDO VIDA DOS PERSONAGENS:
 
         System.out.println("O Colosso está invadindo a vila! Use seu conhecimento de combate para derrotá-lo!");
-        arqueiro.imprimirPersonagem();
-        mago.imprimirPersonagem();
-        cavaleiro.imprimirPersonagem();
+        for (Personagem guerreiro : personagens) {
+            guerreiro.imprimirPersonagem();
+        }
         System.out.println("Vida total dos personagens: "+vidaTotal);
         System.out.println();
         boss.imprimirVida();

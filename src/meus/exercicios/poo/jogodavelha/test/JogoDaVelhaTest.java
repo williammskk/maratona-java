@@ -20,7 +20,7 @@ public class JogoDaVelhaTest {
         // Inicializar o 3x3 com caixas vazias:
 
         for (int i = 0; i < casas.length; i++) {
-            for (int j = 0; j < casas[i].length; j++) {
+            for (int j =     0; j < casas[i].length; j++) {
                 casas[i][j] = '-';
             }
         }
