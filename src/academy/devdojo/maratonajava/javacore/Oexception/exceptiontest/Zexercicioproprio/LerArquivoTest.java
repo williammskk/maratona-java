@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Oexception.exceptiontest.exercicioproprio;
+package academy.devdojo.maratonajava.javacore.Oexception.exceptiontest.Zexercicioproprio;
 
 import java.io.FileReader;
 import java.io.IOException;
