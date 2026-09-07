@@ -12,7 +12,7 @@ public class ExceptionTest01 {
         File arquivo01 = new File("arquivo\\text.txt");
         try {
             boolean isCriado = arquivo01.createNewFile();
-            System.out.println("Foi criado?: "+isCriado);
+            System.out.println("Arquivo criadow: "+isCriado);
         } catch(IOException e){
             e.printStackTrace();
         }
