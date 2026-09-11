@@ -1,16 +1,13 @@
 package academy.devdojo.maratonajava.javacore.Pwrappers.Zexercicioproprio;
 
 public class Calculadora {
-    public Integer valor1;
-    public Integer valor2;
-
-    public static void calcularOperacao(String valor1, String valor2, char operacao) {
+    public static void calcularOperacao(int valor1, int valor2, char operacao) {
         System.out.print("Operação: ");
         try {
-            Integer v1 = Integer.parseInt(valor1);
-            Integer v2 = Integer.parseInt(valor2);
+            Integer v1 = valor1;
+            Integer v2 = valor2;
             if (operacao != '+' && operacao != '-' && operacao != '*' && operacao != '/'){
-                throw new NumberFormatException();
+                throw new OperacaoInvalidaException();
             }
             if (operacao == '+') {
                 System.out.println(v1 + " + " + v2 + " = " + (v1 + v2));
@@ -20,15 +17,13 @@ public class Calculadora {
                 System.out.println(v1 + " * " + v2 + " = " + (v1 * v2));
             } else {
                 if (v2 == 0) {
-                    throw new IllegalArgumentException();
+                    throw new DivisorZeroException();
                 } else {
                     System.out.println(v1 + " / " + v2 + " = " + (v1 / v2));
                 }
             }
-        } catch (NumberFormatException e) {
-            System.out.println(valor1 + " "+ operacao +" " + valor2 + " = " + "Erro: Valor ou operação inválido(a)!");
-        } catch (IllegalArgumentException e) {
-            System.out.println(valor1 + " "+ operacao +" " + valor2 + " = " + "Erro: Divisor igual a zero!");
+        } catch (OperacaoInvalidaException | DivisorZeroException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
