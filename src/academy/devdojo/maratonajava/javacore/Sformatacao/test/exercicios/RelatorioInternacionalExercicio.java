@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Sformatacao.test;
+package academy.devdojo.maratonajava.javacore.Sformatacao.test.exercicios;
 
 import java.text.DateFormat;
 import java.text.NumberFormat;
