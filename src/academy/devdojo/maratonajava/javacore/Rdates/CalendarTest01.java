@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Rdates.test;
+package academy.devdojo.maratonajava.javacore.Rdates;
 
 import java.util.Calendar;
 import java.util.Date;

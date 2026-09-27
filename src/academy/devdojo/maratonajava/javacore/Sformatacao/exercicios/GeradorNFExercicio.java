@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Sformatacao.test.exercicios;
+package academy.devdojo.maratonajava.javacore.Sformatacao.exercicios;
 
 import java.text.DateFormat;
 import java.text.NumberFormat;
@@ -8,18 +8,30 @@ import java.util.Scanner;
 
 public class GeradorNFExercicio {
     public static void main(String[] args) {
+        // Cria o Scanner para o usuário poder interagir:
+
         Scanner input = new Scanner(System.in);
-        Locale localeBR = new Locale ("pt","BR");
+
+        // Usuário digita o nome do cliente, a quantidade de itens e o preço unitário que vai aparecer na nota fiscal:
+
         String nomeCliente = input.nextLine();
         int quantidadeItens = input.nextInt();
         double precoUnitario = input.nextDouble();
+
+        // Faz o cálculo do bruto, do imposto e do líquido:
+
         double subTotal = quantidadeItens*precoUnitario;
         double impostoPorcentagem = 12;
         double impostoProduto = impostoPorcentagem/100*subTotal;
 
+        // Inicializa a data da emissão:
+
+        Locale localeBR = new Locale ("pt","BR");
         Calendar calendar = Calendar.getInstance();
         DateFormat dft = DateFormat.getDateInstance(DateFormat.FULL, localeBR);
         NumberFormat nft = NumberFormat.getCurrencyInstance(localeBR);
+
+        // Gera a nota fiscal:
 
         System.out.println("=== NOTA FISCAL=== ");
         System.out.println("Data de emissão: "+dft.format(calendar.getTime())+"\n");

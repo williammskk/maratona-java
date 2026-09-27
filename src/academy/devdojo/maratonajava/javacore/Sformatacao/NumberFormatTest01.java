@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Sformatacao.test;
+package academy.devdojo.maratonajava.javacore.Sformatacao;
 
 import java.text.NumberFormat;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Sformatacao.test.exercicios;
+package academy.devdojo.maratonajava.javacore.Sformatacao.exercicios;
 
 import java.text.DateFormat;
 import java.text.NumberFormat;
@@ -8,7 +8,8 @@ import java.util.Scanner;
 
 public class RelatorioInternacionalExercicio {
     public static void main(String[] args) {
-        // criar o Scanner para que o input aconteça.
+        // Cria o Scanner para o usuário poder interagir:
+
         Scanner scanner = new Scanner(System.in);
 
         // criar o Calendar, NumberFormat e DateFormat em formas de arrays para economizar linhas e criar a formatação.
