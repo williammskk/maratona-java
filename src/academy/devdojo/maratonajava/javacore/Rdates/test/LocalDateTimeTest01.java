@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Rdates;
+package academy.devdojo.maratonajava.javacore.Rdates.test;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

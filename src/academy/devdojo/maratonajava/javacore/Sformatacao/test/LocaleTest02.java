@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Sformatacao;
+package academy.devdojo.maratonajava.javacore.Sformatacao.test;
 
 import java.util.Locale;
 

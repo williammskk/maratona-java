@@ -1,7 +1,6 @@
-package academy.devdojo.maratonajava.javacore.Rdates;
+package academy.devdojo.maratonajava.javacore.Rdates.test;
 
 import java.util.Calendar;
-import java.util.Date;
 
 public class CalendarTest01 {
     public static void main(String[] args) {
