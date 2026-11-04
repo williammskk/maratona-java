@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Tresourcebundle.test;
+package academy.devdojo.maratonajava.javacore.Tresourcebundle;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
