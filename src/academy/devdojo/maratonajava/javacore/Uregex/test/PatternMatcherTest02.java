@@ -10,7 +10,15 @@ public class PatternMatcherTest02 {
         // \s = Todos os espaços em branco \t \n \f \r;
         // \S = Todos os caracteres, exceto os espaços em branco;
         // \w = a-Z A-Z, dígitos e _;
-        // \W = Tudo que não for incluso no \w.
+        // \W = Tudo que não for incluso no \w;
+        // [] = Todos conforme as condições dentro dos colchecetes;
+        // ? = zero ou uma ocorrência;
+        // * = zero ou mais ocorrência;
+        // + = uma ou mais ocorrências;
+        // {n,m} = de n até m;
+        // () = metacaracteres de agrupamento;
+        // | = Representa o OU, exemplo: o(v|c)o;
+        // $ = Representa o fim da linha.
 
         String regex = "\\d";
         String texto = "t34rr135a";
