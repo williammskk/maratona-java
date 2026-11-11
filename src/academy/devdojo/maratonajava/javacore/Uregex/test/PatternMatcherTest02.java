@@ -19,6 +19,8 @@ public class PatternMatcherTest02 {
         // () = metacaracteres de agrupamento;
         // | = Representa o OU, exemplo: o(v|c)o;
         // $ = Representa o fim da linha.
+        // . = Como um coringa, detecta qualquer valor. Exemplo em 1.3, o "." pode ser
+        // literalmente qualquer valor desde que esteja entre o 1 e o 3.
 
         String regex = "\\d";
         String texto = "t34rr135a";
